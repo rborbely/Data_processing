@@ -24,41 +24,45 @@ namespace Using_LINQ
 
     class Person 
     {
-        private int age;
-        private string name;
-        private string job;
-        private string country;
-        private bool married;
-        private gender gender;
+        private int _age;
+        private string _name;
+        private string _job;
+        private string _country;
+        private bool _married;
+        private gender _gender;
+        private string _addr;
 
-        public int Age { get => age; set => age = value; }
-        public string Name { get => name; set => name = value; }
-        public string Job { get => job; set => job = value; }
-        public string Country { get => country; set => country = value; }
-        public bool Married { get => married; set => married = value; }
-        internal gender Gender { get => gender; set => gender = value; }
+        public int Age { get => _age; set => _age = value; }
+        public string Name { get => _name; set => _name = value; }
+        public string Job { get => _job; set => _job = value; }
+        public string Country { get => _country; set => _country = value; }
+        public bool Married { get => _married; set => _married = value; }
+        internal gender Gender { get => _gender; set => _gender = value; }
+        public string Address { get; set; }
 
         public int Age2
         {
             get
             {
-                return age;
+                return _age;
             }
 
             set
             {
-                this.age = value;
+                this._age = value;
             }
         }
 
+
         public Person(String name, int age, gender gender)
         {
-            this.name = name;
-            this.age = age;
-            this.job = "";
-            this.country = "Hungary";
-            this.married = false;
-            this.gender = gender;
+            this._name = name;
+            this._age = age;
+            this._job = "";
+            this._country = "Hungary";
+            this._married = false;
+            this._gender = gender;
+            this._addr = "";
         }
     }
 

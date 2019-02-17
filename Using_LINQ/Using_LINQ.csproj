@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{25B75FDF-BF7B-4AC0-A492-E6969D6D783D}</ProjectGuid>
+    <ProjectGuid>{80887F74-B00F-4BA8-9BE5-CEF9F539A4CC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Using_LINQ_1</RootNamespace>
-    <AssemblyName>Lambda_Exp_1</AssemblyName>
+    <RootNamespace>Using_LINQ</RootNamespace>
+    <AssemblyName>Using_LINQ</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Using_LINQ.Program</StartupObject>
+    <StartupObject>Using_LINQ.Program2</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -61,8 +61,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyTypes.cs" />
-    <Compile Include="Program1.cs" />
+    <Compile Include="DTypes.cs" />
+    <Compile Include="Program2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
